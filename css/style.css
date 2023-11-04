@@ -1,0 +1,668 @@
+:root{
+   --fuenteUno:'Source Sans Pro', sans-serif; /*300,400,700*/
+   --fuenteDos:'Playfair Display', sans-serif;/*400,700*/
+   --fuenteTres:'Open Sans', sans-serif;/*400,300,600*/
+
+
+}
+
+/*Important*/
+html{
+   box-sizing: border-box;
+   font-size: 62.5%; /*Parte de q un 1rem = 10px*/
+   height: 100%;
+}
+*,*:before,*:after{
+   box-sizing: inherit;
+   
+
+}
+body{
+   /*background-color: #4460CB;*/
+   /* background: linear-gradient(#D1CBCB, #FFFFFF) no-repeat fixed; */
+   /* background-repeat: no-repeat;
+   background-attachment: fixed; */
+   
+   /* background:linear-gradient(top, red,40%, gold,60%); */
+   /* background-size: 400% 400%; */   
+   overflow-x: hidden;
+}
+
+
+/*header*/
+.cabecera{
+   
+   height: 30rem;
+   
+}
+.imgLogo{
+   
+   width: 28rem;
+   /* margin: 3rem; */
+}
+.nombreEmpresa{
+   /* border: 1px solid black; */
+   
+}
+.textoEmpresa1{
+   font-family: var(--fuenteUno);
+   font-weight: 700;
+}
+.textoEmpresa2{
+   font-family: var(--fuenteUno);
+   font-weight: 700;
+}
+/*ends header*/
+
+ /*nav bar*/
+ 
+ .navbItem{
+   text-transform: uppercase;
+   padding: 0;
+   margin: 0;
+   font-family: var(--fuenteTres);
+   font-weight: 700;
+   /* color: white; */
+   
+ }
+ 
+
+ .navbItem333{
+   /* text-decoration: none;
+   color:red;
+   font-size: 40px; */
+   font-size: 40px;
+   /* color:#2130da; */
+   /* text-shadow: 3px 30px 30px #888282; */
+   text-shadow: 1px 15px 4px #8D8B8E;
+   text-decoration:none;
+ }
+ .navbItem333:hover{
+   color:#ffffff;  
+ } 
+
+ .navbItem:hover{
+   
+   transition: .1s;
+   z-index: 1;
+   font-size: 20px;
+   transform: translateX(200px) rotate(135deg);
+   transition: background-color .2s; 
+   transition: all 600ms;
+   transform: scale(4.5); 
+   -webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    
+ 
+ }
+ .navbarRow{
+   /* border: 3px solid black; */
+   height: 8rem;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   
+   /* transition-duration: 0.3s;
+   transition-delay: 0.2s;
+   transition-timing-function: steps(5, jump-both); */
+   transition-property: linear;
+   transition: 0.8s;
+
+ }
+ navbarRow:hover{
+   /* color: #323CE6; */
+ }
+
+ .bannerEstatico{
+   position: fixed;
+   z-index: -1;
+   height: 30rem;
+   top: 0;
+   left: 0;
+   
+ }
+
+ .bannerEstatico{
+   background-color: red;
+   /* background-color:#E63232; */
+   background-image: url("../img/camiones_header.png");
+   background-position: center;
+   background-size: cover;
+   height: 60.7%;
+   opacity: 0.6;
+ }
+
+
+
+
+/*ends nav bar*/
+
+
+/*Texo empresa header*/
+.textoEmpresa1{
+   
+   text-align: center;   
+   font-size: 6rem;
+   text-transform: uppercase;
+}
+
+.textoEmpresa2{
+   
+   text-align: center;
+   font-size: 6rem;
+}
+/* endsTexo empresa header*/
+
+/*quienes somos*/
+
+.titleQuienes{
+   font-family: var(--fuenteUno);
+   font-weight: 700;
+}
+
+#quienessomos{
+   /* border: 1px solid black; */
+   font-family: var(--fuenteTres);
+   font-weight: 400;
+}
+
+.titleQuienes{
+   font-size: 50px;
+   padding-top: 20px;
+}
+
+.textQuienesSomos{
+   
+   font-family: var(--fuenteTres);/*uno 400*/
+   font-weight:600;
+   font-style: italic;
+   font-size: 25px;
+   /* border: 1px solid black; */
+   /* background-color: #c6c2c2; */
+   /* opacity: 0.7; */
+   border-radius: 1px;
+   text-align:justify;
+   
+}
+
+.textQuienesSomosScroll{
+   background: linear-gradient(#2C37A5,#ffffff);
+   opacity: 0.8;
+}
+.contenidoQsomosScroll{
+   color: black;
+}
+/*ends quienes somos*/
+
+/*Mision Vision*/
+.misionVisionJ{
+   /* border: 1px solid black; */
+   padding-bottom: 50px;
+   padding-top: 50px;
+   
+   
+}
+
+.vision,.mision{
+/* border: 1px solid black; */
+text-transform: uppercase;
+/* font-family: var(--fuenteUno);
+font-weight:300; */
+
+}
+
+.misionText,.visionText{
+   font-family: var(--fuenteUno);
+   font-weight:700;
+   font-size: 30px;
+}
+
+.contenidoMision,.contenidoVision{
+   font-family: var(--fuenteTres);
+   font-weight:600;
+   font-style: italic;
+   font-size: 25px;
+}
+.contenidoVision{
+   padding-top: 15rem;
+}
+/*ends Mision Vision*/
+
+/*valores*/
+.tituloValores{
+   text-transform: uppercase;
+   font-family: var(--fuenteUno);
+   font-weight:700;
+   font-size: 30px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   /* border: 1px solid black; */
+   
+}
+
+.titleVals{
+   text-transform: uppercase;
+}
+.textVals{
+   font-family: var(--fuenteTres);
+   font-weight:600;
+   font-style: italic;
+   font-size: 15px;
+}
+.valoresIzquierda,.valoresDerecha{
+   padding-top: 40px;
+   padding-bottom: 40px;
+}
+/*ends valores*/
+
+/*POLITICA DE CALIDAD*/
+
+.pCalidad{
+   font-family: var(--fuenteUno);
+   font-weight:700;
+   font-size: 30px;
+   /* border: 1px solid black; */
+   padding-top: 60px;
+   padding-bottom: 60px;
+   text-transform: uppercase;
+}
+
+.textPcalidad{
+   font-family: var(--fuenteUno);
+   font-weight:700;
+   font-size: 30px;
+}
+
+#pCalidad{
+   padding-top: 50px;
+   padding-bottom: 50px;
+   /* border: 1px solid black; */
+}
+
+.contentPcalidad{
+   font-family: var(--fuenteTres);
+   font-weight:600;
+   font-style: italic;
+   font-size: 25px;
+}
+/* ends POLITICA DE CALIDAD*/
+
+/* certificaciones */
+#certificaiones{
+   padding-top: 10px;
+   padding-bottom: 30px;
+}
+
+.textCertificaciones{
+   text-transform: uppercase;
+   font-family: var(--fuenteUno);
+   font-weight:700;
+   font-size: 30px;
+}
+
+.carousel{
+   /* border: 1px solid black; */
+   border-radius: 100%;
+
+}
+
+#contenedorCarousel{
+   padding-top: 40px;
+   padding-bottom: 40px;
+   /* border: 1px solid black; */
+   
+}
+
+.fondoCarousel{
+   
+   /* background:rgb(228,167,48); */
+   background-image: linear-gradient(rgb(228,167,48),white,rgb(228,167,48));
+   
+}
+
+/*imagenes certifiones*/
+.certificadoDiaz,.certificadoOver,.certificadoLimpia,.isoDiaz,.isoOver{
+   width: 500px;
+   height: 500px;
+   opacity: 0.9;
+}
+
+
+.certificadoDiaz,.certificadoOver,.isoDiaz,.isoOver,.certificadoLimpia{
+   border-radius: 10%;
+}
+
+
+ /* ends certificaciones*/
+
+/* ends gente*/
+#nuestraGente{
+   /* border: 1px solid black; */
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+.titleNuestraGente{
+   text-transform: uppercase;
+   font-family: var(--fuenteUno);
+   font-weight:700;
+   font-size: 30px;   
+}
+
+.contenidoGente{
+   /* border: 1px solid black; */
+   padding-top: 40px;
+   padding-bottom: 40px;
+}
+
+.sectionOneGente{
+   font-family: var(--fuenteTres);
+   font-weight:600;
+   font-style: italic;
+   font-size: 15px;   
+}
+.satisfactionClient{
+
+}
+
+.sectionTwoGente{
+   font-family: var(--fuenteTres);
+   font-weight:600;
+   font-style: italic;
+   font-size: 15px;
+
+}
+
+/* fin nuestra gente*/
+
+/*valores2*/
+.tituloValores2{
+   text-transform: uppercase;
+   font-family: var(--fuenteUno);
+   font-weight:700;
+   font-size: 30px;
+   /* border: 1px solid black; */
+   margin-bottom: 0;
+   padding-top: 50px;
+}
+.valoresBasados{
+   /* border: 1px solid black; */
+   margin-top: 0;
+   padding-bottom: 50px;   
+   margin-bottom: 0;
+}
+.valores2content{
+   /* border: 1px solid black; */
+   margin-top: 0;
+}
+
+.tituloCompromiso,.tituloExperiencia,.tituloServicio{
+   font-family: var(--fuenteUno);
+   font-weight:600;
+   font-size: 18px;   
+}
+
+.textoExper,.textServ,.textCompro{
+   font-family: var(--fuenteTres);
+   font-weight:600;
+   font-style: italic;
+   font-size: 15px;
+}
+
+/*ends valores2*/
+
+/* instalaciones */
+
+.titleInstala{
+   text-transform: uppercase;
+   font-family: var(--fuenteUno);
+   font-weight:700;
+   font-size: 30px;
+   padding-top: 10rem;
+   /* border: 1px solid black; */
+   margin-bottom: 0;
+}
+
+.contenedorMapas{
+   /* border: 1px solid black; */
+   margin-top: 0;
+   height: 75rem;
+}
+
+.matrizMexico{
+   /* border: 1px solid black; */
+}
+
+.tituloMexico,.tituloMatriz{
+   text-transform: uppercase;
+   /* border: 1px solid black; */
+}
+
+.tituloMexico{
+   margin-bottom: 0;
+}
+
+.tituloMatriz{
+   margin-top: 0;
+}
+
+.mapaEmbeded{
+   position: relative;
+   overflow: hidden;
+   padding-top: 60rem;
+   /* border: 3px solid red; */
+   
+}
+
+.mapaEmbeded iframe{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.direccionMatriz{
+   font-family: var(--fuenteTres);
+   font-weight:600;
+   font-style: italic;
+   font-size: 15px;   
+}
+
+.otrasSucursales{
+   /* border: 1px solid black; */
+}
+
+.manza1{
+   /* border: 1px solid black; */
+   /* margin-top: 10rem; */
+   
+}
+
+.manza2{
+   /* border: 1px solid black; */
+   /* margin-top: 10rem; */
+}
+
+.TituloSucursalMzo{
+   text-transform: uppercase;
+   padding-bottom: 5px;
+}
+
+.oficinaMzo1,.oficinaMzo2{
+   text-transform: uppercase;
+}
+.oficinaMzo2{
+   margin-top: 40px;
+}
+.dirMzo1,.dirMzo2{
+   font-family: var(--fuenteTres);
+   font-weight:600;
+   font-style: italic;
+   font-size: 12px;   
+}
+
+
+.mapaEmbeded2{
+   position: relative;
+   overflow: hidden;
+   padding-top: 25rem;
+   /* border: 3px solid red; */
+   
+}
+
+.mapaEmbeded2 iframe{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+
+.mapaEmbeded3{
+   position: relative;
+   overflow: hidden;
+   padding-top: 25rem;
+   /* border: 3px solid red; */
+   
+}
+
+.mapaEmbeded3 iframe{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+/* ends instalaciones  */
+
+
+/* equipo */
+.tilteEquipo{
+   text-transform: uppercase;
+   font-family: var(--fuenteUno);
+   font-weight:700;
+   font-size: 30px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.sectionSeguros{
+   /* border: 1px solid black;    */
+   padding: 5rem;
+   
+}
+.rowSectionSeguro,.rowSectionPermisos{
+   border: 1px solid blue;
+}
+.logoSeguro,.logoPermisos,.logMonitoreo,.logoUnidades,.logoSoporte{
+   /* border: 1px solid red; */
+   border-radius: 5px;
+   width: 100px;
+   height: 100px;
+}
+.tituloSeguro,.tituloPermisos,.tituloMonitoreo,.tituloUnidades,.tituloSoporte{
+   text-transform: uppercase;
+   font-family: var(--fuenteUno);
+   font-weight:700;
+   font-size: 20px;
+}
+
+.textSeguro,.textPermisos,.textMonitoreo,.textUnidades,.textSoporte,.textRutas{
+   font-family: var(--fuenteTres);
+   font-weight:600;
+   font-style: italic;
+   font-size: 12px;
+}
+
+.boxlogoPermisos{
+   /* padding-top: 70px; */
+}
+.boxlogoUnidades{
+   /* padding-top: 30px; */
+}
+
+.logoPermisos,.logoSeguro{
+   
+}
+/* ends equipo */
+
+
+/* rutas*/
+.titleRutas{
+   text-transform: uppercase;
+   font-family: var(--fuenteUno);
+   font-weight:700;
+   font-size: 30px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+.tablaRutas{
+   padding-top: 30px;
+   /*Se colocan para poder colocar el fondo .tablaRutas:before*/
+   position: relative;
+   overflow: hidden;
+}
+
+.tablaRutas:before {
+   content: ' ';
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   opacity: 0.2;
+   background-image: url(../img/fondo_rutas2.png);
+   background-repeat: no-repeat;
+   background-position: 50% 0;
+   background-size: cover;
+}
+/* ends rutas */
+
+/* equipo */
+#equipo{
+/* background-image: linear-gradient(rgb(36,44,119)); */
+/* background-image: linear-gradient(rgb(36,44,119),white); */
+background-image: radial-gradient(white,rgb(67,109,245));
+}
+/* ends equipo */
+
+/* contacto */
+.textContactor{
+   text-transform: uppercase;
+   font-family: var(--fuenteUno);
+   font-weight:700;
+   font-size: 30px;
+   /* padding-top: 20px;
+   padding-bottom: 20px; */
+   color: white;
+}
+/* .iconImg,.iconSobre,.iconMovil{
+   width: 15px;
+   height: 15px;
+   
+}   */
+.footerComplete{
+   
+   background-color: #1135A7;
+   width: auto;
+   color: white;
+   
+   padding: 0;
+   
+}
+
+
+.arrowFilaBlanco{
+   width: 50px;
+   height: 50px;
+   position: fixed;
+   bottom: 250px;
+   right: 10px;
+   filter: invert(100%);
+   background-color: yellow;
+   border-radius: 50%;
+}
+
